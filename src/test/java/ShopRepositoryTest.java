@@ -21,7 +21,7 @@ public class ShopRepositoryTest {
     }
 
     @Test
-    public void NotFoundException() {
+    public void shouldNotFoundException() {
         ShopRepository repo = new ShopRepository();
         repo.add(product1);
         repo.add(product2);
@@ -45,7 +45,7 @@ public class ShopRepositoryTest {
     }
 
     @Test
-    public void AlreadyExistsException() {
+    public void shouldAlreadyExistsException() {
         ShopRepository repo = new ShopRepository();
         repo.add(product1);
         repo.add(product2);
